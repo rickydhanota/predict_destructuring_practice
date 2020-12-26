@@ -41,3 +41,17 @@ const [,,,,,,,,third] = numbers;//Displays 2
 // console.log(third);
 console.log(first == second);//Checks if the value is True or False
 console.log(first == third);
+
+//Prblem 5
+const lastTest = {
+    key: 'value',
+    secondKey: [1, 5, 1, 8, 3, 3]
+}
+const { key } = lastTest; //Prints string value
+const { secondKey } = lastTest; //Prints the list
+const [ ,willThisWork] = secondKey; //because we defined the variable secondkey first, we can do this
+//Predict the output
+console.log(key);
+console.log(secondKey);
+console.log(secondKey[0]);//first index position due to second key
+console.log(willThisWork);
