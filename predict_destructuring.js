@@ -29,3 +29,15 @@ const { password: hashedPassword } = person;
 //Predict the output
 console.log(password);
 console.log(hashedPassword); //Because password isnt in the object person, this displays as undefined
+
+//Prblem 4
+const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
+const [,first] = numbers; //Displays 2
+const [,,,second] = numbers; //Displays 5
+const [,,,,,,,,third] = numbers;//Displays 2
+//Predict the output
+// console.log(first)
+// console.log(second)
+// console.log(third);
+console.log(first == second);//Checks if the value is True or False
+console.log(first == third);
