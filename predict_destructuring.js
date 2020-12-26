@@ -55,3 +55,12 @@ console.log(key);
 console.log(secondKey);
 console.log(secondKey[0]);//first index position due to second key
 console.log(willThisWork);
+
+
+//More Practice using Rest/Spread
+const animals = ['horse', 'dog', 'fish', 'cat', 'bird'];
+// const [firstAnimal, secondAnimal] = animals;
+
+const [firstAnimal, secondAnimal, ...otherAnimals] = animals;
+console.log(otherAnimals);
+// => ['fish', 'cat', 'bird']
