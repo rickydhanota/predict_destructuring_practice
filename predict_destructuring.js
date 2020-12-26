@@ -17,3 +17,15 @@ const { name: otherName } = employee;
 //console.log(name); 
 //This line throws an error because the variable doesnt exist, it is not defined
 console.log(otherName); //We save the value of name into otherName
+
+//Problem 3
+const person = {
+    name: 'Phil Smith',
+    age: 47,
+    height: '6 feet'
+}
+const password = '12345';
+const { password: hashedPassword } = person;  
+//Predict the output
+console.log(password);
+console.log(hashedPassword); //Because password isnt in the object person, this displays as undefined
